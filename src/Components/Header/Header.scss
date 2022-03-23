@@ -1,0 +1,21 @@
+@import "../../Assets/SCSS/mixin.scss";
+@import "../../Assets/SCSS/varebiles.scss";
+
+.header{
+    width: 100%;
+
+    &__app{
+        box-shadow: none !important; 
+    }
+
+    &__bar{
+        min-height: 56px !important;
+        background-color: $top-color;
+        padding-left: 40px !important;
+    }
+
+    &__icon{
+        margin-right: 20px;
+        cursor: pointer;
+    }
+}

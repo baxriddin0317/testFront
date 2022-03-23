@@ -1,0 +1,38 @@
+@import "../../Assets/SCSS/varebiles.scss";
+@import "../../Assets/SCSS/mixin.scss";
+
+.login{
+    width: 347px;
+    margin: 0 auto;
+
+    h2{
+        text-align: center;
+        @include reset-title($text-color);
+        margin-bottom: 15px;
+    }
+
+    p{
+        margin-bottom: 34px;
+        text-align: center;
+        @include reset-text($text-color);
+    }
+
+    .form {
+        
+
+        p{
+            text-align: left;
+        }
+
+        button{
+            @include btn;
+        }
+
+    }
+}
+
+.link{
+    @include reset-text($top-color);
+    text-decoration: underline;
+    cursor: pointer;
+}

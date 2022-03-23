@@ -1,0 +1,6 @@
+@import "../../Assets/SCSS/mixin.scss";
+@import "../../Assets/SCSS/varebiles.scss";
+.button{
+    @include btn;
+    background-color: #7761FF !important;
+}

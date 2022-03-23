@@ -1,0 +1,62 @@
+@import '../../Assets/SCSS/mixin.scss';
+@import '../../Assets/SCSS/varebiles.scss';
+
+.kirish{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 1330px;
+    margin: 0 auto;
+
+    &__left{
+        padding: 30px 40px;
+        width: 782px;
+        height: 768px;
+        position: relative;
+
+        &-logo{
+            position: absolute;
+            bottom: 25px;
+            left: 25px;
+            width: 113px;
+        }
+    }
+
+    &__right{
+        background-color: $bg-color;
+        height: 768px;
+        color: #fff;
+        width: 614px;
+        padding: 134px 25px 148px 25px;
+        text-align: center;
+
+        h2{
+            margin-bottom: 52px;
+            font-weight: 400;
+            font-size: 28px;
+            line-height: 33px;
+        }
+
+        img{
+            margin-bottom: 55px;
+        }
+        
+    }
+}
+
+.head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #EBE7FF;
+
+    a{
+        display: flex;
+        align-items: center;
+        @include reset-text(#7761ff);
+        i{
+            margin-right: 5px;
+        }
+    }
+}

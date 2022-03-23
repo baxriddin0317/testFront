@@ -1,0 +1,71 @@
+@import '../../Assets/SCSS/mixin.scss';
+@import '../../Assets/SCSS/varebiles.scss';
+
+.card{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    &__item {
+        cursor: pointer;
+        display: flex;
+        width: 49%;
+        height: 183px;
+        background: #FFFFFF;
+        box-shadow: 0px 0px 5px #EBE7FF;
+        border-radius: 5px;
+        margin-bottom: 15px;
+        border: 2px solid #EBE7FF;
+
+        &-left {
+            width: 130px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 50px;
+            color: #EBE7FF;
+
+        }
+
+        &-box{
+            padding: 20px 20px 20px 30px;
+            width: 350px;
+
+            ul{
+                list-style-type: disc;
+                padding-left: 20px;
+            }
+
+            p{
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+            }
+        }
+
+        &-title{
+            border-bottom: 2px solid #EBE7FF;
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+            font-weight: 400;
+            font-size: 28px;
+            line-height: 33px;
+        }
+    }
+
+    .active-item{
+        border: 2px solid #50CAFF;
+        box-shadow: 0px 0px 5px #EBE7FF;
+
+        .card__item-left{
+            background: #50CAFF;
+            color: #fff;
+        }
+
+        .card__item-title{
+            border-bottom: 2px solid #50CAFF;
+        }
+    }
+}

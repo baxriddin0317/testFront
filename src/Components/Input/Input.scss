@@ -1,0 +1,38 @@
+@import "../../Assets/SCSS/mixin.scss";
+@import "../../Assets/SCSS/varebiles.scss";
+
+.input{
+    width: 100%;
+    position: relative;
+    height: 40px;
+    margin-bottom: 20px;
+
+    input{
+        position: absolute;
+        @include input;
+        margin-bottom: 20px;
+        height: 100%;
+        border: 1px solid #ccc;
+        
+        &:focus{
+            border: 1px solid $top-color;
+        }
+
+        &:focus ~ label{
+            top: -7px;
+            background-color: white;
+            color: $top-color;
+            opacity: 1;
+        }
+    }
+
+    label{
+        padding: 0 5px;
+        position: absolute;
+        @include reset-text(#ccc);
+        left: 15px;
+        opacity: 0;
+        top: 13px;
+        transition: all 0.2s ease;
+    }
+}

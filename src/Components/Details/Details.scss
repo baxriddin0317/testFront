@@ -1,0 +1,71 @@
+@import "../../Assets/SCSS/mixin.scss";
+@import "../../Assets/SCSS/varebiles.scss";
+.details{
+    margin-top: 29px;
+
+    &__block {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        
+        .input {
+            width: 20px;
+            height: 20px;
+            border: 1px solid #7761FF;
+            border-radius: 5px;
+            margin-right: 20px;
+        }
+
+        .p{
+            @include reset-text(#000);
+            margin-left: 15px;
+        }
+
+        #man,
+        #woman{
+            display: none;
+        }
+
+        label{
+            width: 30px;
+            height: 30px;
+            border: 1px solid #ccc;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            margin-left: 12px;
+        }
+
+        .man{
+            background-color: $btn-color;
+            color: #fff;
+        }
+
+        .date{
+            margin-left: 20px;
+            width: 168px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 11px 15px;
+        }
+    }
+
+    a{
+        @include reset-text($top-color);
+        text-align: justify;
+        text-decoration-line: underline;
+    }
+
+    p{
+        @include reset-text($text-color);
+        text-align: justify;
+    }
+
+    &__span{
+        @include reset-text($text-color);
+        margin-bottom: 17px;
+        display: inline-block;
+    }
+}

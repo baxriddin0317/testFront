@@ -1,0 +1,44 @@
+// text style mixin
+@mixin reset-text($color){
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: $color;
+}
+
+@mixin  reset-title($color) {
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 33px;
+    color: $color;
+}
+
+// input mixin
+@mixin input {
+    width: 100%;
+    padding: 12px 14px;
+    @include reset-text(#000);
+    border: 0.5px solid #000000;
+    box-sizing: border-box;
+    border-radius: 5px;
+    outline: none;
+}
+
+// button style mixin
+@mixin btn {
+    background: #7761FF;
+    border-radius: 5px;
+    width: 100%;
+    text-align: center;
+    padding: 12px 0;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: rgba(255, 255, 255, 0.4) !important;
+    border: none;
+    cursor: pointer;
+
+    &:active{
+        background: #5641cc;
+    }
+}
