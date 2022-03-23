@@ -2,7 +2,7 @@ import { Route, Routes } from 'react-router-dom';
 import './App.scss';
 import Kirish from './Pages/Krish/Kirish';
 import Home from './Pages/Prolif/Home';
-import Registr from './Pages/Registr/Registr';
+import Registratsiya from './Pages/Registratsiya/Registratsiya';
 
 function App() {
   window.localStorage.setItem("email", "xoja@gmail.com");
@@ -14,7 +14,7 @@ function App() {
         <Route path='/kod' element={<Kirish kod={"kod"} />} />
         <Route path='/profil/*' element={<Home />} />
         <Route path='/parol' element={<Kirish parol={true} />} />
-        <Route path='/registratsiya' element={<Registr />} />
+        <Route path='/registratsiya' element={<Registratsiya />} />
       </Routes>
     </div>
   );

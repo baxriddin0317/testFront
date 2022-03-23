@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 // style 
-import './Registr.scss';
+import './Reagistratsiya.scss';
 import Aos from 'aos';
 // get components
 import Head from '../../Components/Head/Head'
@@ -10,7 +10,7 @@ import Login from "../../Assets/Img/login.png"
 import Logo from "../../Assets/Img/logo.png";
 
 
-function Registr() {
+function Registratsiya() {
 
   useEffect(()=>{
     Aos.init({deration: 2000});
@@ -39,4 +39,4 @@ function Registr() {
   )
 }
 
-export default Registr
+export default Registratsiya;
