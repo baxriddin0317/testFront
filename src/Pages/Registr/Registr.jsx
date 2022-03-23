@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 // style 
-import './registr.scss';
+import './Registr.scss';
 import Aos from 'aos';
 // get components
 import Head from '../../Components/Head/Head'
