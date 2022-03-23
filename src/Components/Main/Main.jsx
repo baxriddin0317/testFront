@@ -38,7 +38,6 @@ function Main() {
       setActiveStep((prevActiveStep) => prevActiveStep + 1);
       setSkipped(newSkipped);
 
-      console.log(e.target.value);
     };
   
     const handleBack = () => {

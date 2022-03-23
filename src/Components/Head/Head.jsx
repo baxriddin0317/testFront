@@ -2,7 +2,6 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 function Head({m}) {
-    console.log(m);
 return (
     // ===== top side of the site ======
     <div className="head" style={{ marginBottom: m }}>

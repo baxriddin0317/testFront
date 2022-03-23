@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 // style 
-import './REgistr.scss';
+import './Registr.scss';
 import Aos from 'aos';
 // get components
 import Head from '../../Components/Head/Head'
@@ -11,9 +11,11 @@ import Logo from "../../Assets/Img/logo.png";
 
 
 function Registr() {
+
   useEffect(()=>{
     Aos.init({deration: 2000});
   }, [])
+
   return (
     <div className='registr'>
       <div className="registr__left">
